@@ -8,4 +8,5 @@ for number in numbers:
         minVal = number
     if number > maxVal:
         maxVal = number
+    number.sort(reverse=True)
 print("Heighest number:", maxVal)

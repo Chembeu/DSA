@@ -21,5 +21,6 @@ class Stack:
 mystack = Stack()
 mystack.push(10)
 mystack.push(50)
+mystack.push(100)
 print(mystack.pop())
 print(mystack.stack)

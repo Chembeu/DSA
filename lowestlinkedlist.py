@@ -14,6 +14,16 @@ def findLowest(head):
     return minVal
 
 
+def findHighest(head):
+    maxVal = head.data
+    currentNode = head.next
+    while currentNode:
+        if currentNode.data > maxVal:
+            maxVal = currentNode.data
+        currentNode = currentNode.next
+    return maxVal
+
+
 def transverse(head):
     currentNode = head
     while currentNode:
@@ -42,7 +52,7 @@ def delete_value(head, value):
     return head
 
 
-node1 = Node(4)
+node1 = Node(1)
 node2 = Node(16)
 node3 = Node(3)
 
@@ -50,6 +60,10 @@ node3 = Node(3)
 node1.next = node2
 node2.next = node3
 node0 = insertNode(node1, 2)
-node0 = delete_value(node0, 4)
-print(transverse(node0))
+node5 = insertNode(node0, 20)
+node5 = insertNode(node5, 70)
+node6 = delete_value(node5, node1)
+
+print(transverse(node5))
 print(findLowest(node0))
+print(findHighest(node5))

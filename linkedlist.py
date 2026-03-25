@@ -12,11 +12,24 @@ def transverse(head):
     print("null")
 
 
+def reverse(head):
+    prev = None
+    current = head
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
+
+    return current
+
+
 node1 = Node(7)
 node2 = Node(6)
 node3 = Node(9)
 
 node1.next = node2
 node2.next = node3
+new_node = reverse(node3)
 
-transverse(node2)
+transverse(new_node)

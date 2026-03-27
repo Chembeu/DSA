@@ -8,3 +8,11 @@ def reverse(self, x):
     reversed = int(str(x)[::-1])
     reversed = sign * reversed
     return reversed
+
+
+def reverrse_array(arrays):
+    reversed = arrays[::-1]
+    return reversed
+
+
+print(reverrse_array([1, 2, 3, 4, 5]))

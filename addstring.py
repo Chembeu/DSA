@@ -5,5 +5,5 @@ class Solution(object):
         :type num2: str
         :rtype: str
         """
-        multi = str(int(num1) * int(num2))
-        return multi
+       while b!=0:
+        

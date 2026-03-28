@@ -31,3 +31,5 @@ def array_print(grid):
             return True
     
     return False
+numbers = [[2,4],[4,7]]
+array_print(numbers)
